@@ -32,15 +32,34 @@ int main(void) {
 	int target_base = 5;
 	int starting_number = 68;
 
-	int first_quotient = starting_number / target_base;
-	int first_remainder = starting_number % target_base;
-	//printf("the result is %d",first_quotient);
-	//printf("the result is %d",first_remainder);
+//	int first_quotient = starting_number / target_base;
+//	int first_remainder = starting_number % target_base;
+//	//printf("the result is %d",first_quotient);
+//	//printf("the result is %d",first_remainder);
+//
+//	int integer_result = first_remainder;
+//	char string_result[5];
+//	sprintf(string_result, "%d", integer_result);
+//
+//	int remainder = first_remainder;
 
-	int integer_result = first_remainder;
-	char string_result[5];
-	sprintf(string_result, "%d", integer_result);
+	int quotient = starting_number;
 
+	while (quotient != 0) {
+		quotient = quotient / target_base;
+	//	int remainder = first_quotient % target_base;
+//		printf("the result is %d\n",next_quotient);
+//	//	printf("the remainder is %d\n",remainder);
+//
+//		char string_third_remainder[5];
+//		//sprintf(string_third_remainder, "%d", remainder);
+//		strcat(string_result, string_third_remainder);
+//
+//		printf("the answer unreversed is %s\n", string_result);
+	}
+
+
+	/*
 	int second_quotient = first_quotient / target_base;
 	int second_remainder = first_quotient % target_base;
 	printf("the result is %d\n",second_quotient);
@@ -63,10 +82,11 @@ int main(void) {
 	strcat(string_result, string_third_remainder);
 
 	printf("the answer unreversed is %s\n", string_result);
+*/
 
-	reverse(string_result, 0, strlen(string_result)-1);
-
-	printf("the final answer is %s\n", string_result);
+//	reverse(string_result, 0, strlen(string_result)-1);
+//
+//	printf("the final answer is %s\n", string_result);
 
 
 	return EXIT_SUCCESS;
