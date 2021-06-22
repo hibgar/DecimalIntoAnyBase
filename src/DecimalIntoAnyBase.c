@@ -28,8 +28,12 @@ char reverse(char *x, int begin, int end)
 
 int main(void) {
 
-	int target_base = 5;
-	int starting_number = 68;
+	int target_base;
+	printf("Enter a base: ");
+	scanf("%d", &target_base);
+	int starting_number;
+	printf("Enter a decimal #: ");
+	scanf("%d", &starting_number);
 	char string_result[5];
 
 
